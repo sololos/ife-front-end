@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>个人简历</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<div >
+		  <div class="borderB">
+		    <table >
+		      <h2 class="bomm">基本信息：</h2>
+		      <tr>
+		        <td>姓名：王大锤</td>
+		      </tr>
+		      <tr>
+		        <td>民族：汉族</td>
+		      </tr>
+		      <tr>
+		        <td>学历：大学本科</td>
+		      </tr>
+		      <tr>
+		        <td>专业：打游戏专业</td>
+		      </tr>
+		      <tr>  
+		        <td>手机：18888888888</td>
+		      </tr>
+		      <tr>
+		        <td>邮箱：888888@baidu.com</td>
+		      </tr>
+		      <tr>
+		        <td>住址：北京</td>
+		      </tr>
+		    </table>
+		    
+		    
+		    <div class="borderC">
+		      <h1>简历</h1>
+		      <h2>项目经验：</h2>
+		        <ul>
+		          <li>项目管理系统</li>
+		            <ul>
+		              <li>负责开发企业级项目管理系统</li>
+		              <li>反馈所有员工打游戏进度</li>
+		              <li>反馈所有员工完成代码进度</li>
+		            </ul>
+		          <li>流程审批系统</li>
+		            <ul>
+		              <li>负责开发用于企业办公的工作流程审批系统</li>
+		              <li>管理所有员工的离职流程</li>
+		            </ul>
+		          <li>微信移动平台</li>
+		            <ul>
+		              <li>基于微信公众号的轻量级企业办公平台</li>
+		              <li>基于微信公众号的小程序开发</li>
+		              <li>基于微信公众号的H5游戏开发</li>
+		              <li>基于微信公众号的订餐品台</li>
+		            </ul>
+		        </ul>
+		       <h2 id="workexp" class="style1">点我查看工作经历</h2>
+		       	<ul id="jsul">
+		       	</ul>
+		    </div>
+		  </div>
+		</div>
+		<script>
+			var para = document.getElementById("workexp");
+			para.addEventListener('click',updateUl);
+			
+			function updateUl() {
+				document.getElementById("workexp").innerHTML = "工作经历：";
+				document.getElementById("jsul").innerHTML = '<li>什么工作经历都没有<\/li>' + '<li>就算有我也不告诉你<\/li>' + '<li>就不告诉你就不告诉你<\/li>';
+			}
+		</script>
+	</body>
+</html>
